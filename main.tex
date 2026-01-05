@@ -1,0 +1,79 @@
+\documentclass[12pt]{report}
+
+\usepackage[latin2]{inputenc}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{fancyhdr}
+\usepackage[left=1.5in]{geometry}
+\usepackage{geometry}
+%\pagestyle{fancyplain}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{uvm-thesis-style}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{hyperref}
+
+\input{titlepage}
+
+\begin{document}
+	
+	\maketitle
+	\pagenumbering{roman}
+
+	\begin{abstract}
+		
+		\vspace{10mm}
+		\include{content/abstract}
+		
+	\end{abstract}
+	
+	\begin{dedication}
+		
+		\flushright{ \include{content/dedication}}
+		
+	\end{dedication}
+
+	\begin{acknowledgements}
+		
+		\include{content/acknowledgements}
+			
+	\end{acknowledgements}
+		
+		\newpage
+		
+		\tableofcontents
+		\newpage
+		
+		
+		\listoffigures
+		\newpage
+		
+		\listoftables
+		\newpage
+		
+		\doublespacing
+		
+		\include{content/introduction}
+		\include{content/chapter1}
+		\include{content/chapter2}
+		\include{content/chapter3}
+		\include{content/conclusion}
+		\include{content/appendix}
+		
+		\newpage
+		
+		\setstretch{1.0}
+		\bibliography{bibliography}
+		\bibliographystyle{unsrt}
+		
+		
+		
+	\end{document} 
