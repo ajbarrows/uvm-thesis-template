@@ -15,6 +15,24 @@ git clone git@github.com:ajbarrows/uvm-thesis-template.git
 cd uvm-thesis-template
 ```
 
+**It is strongly recommended that you create your own version-controlled template.**
+
+Rename the repository first, if you like.
+
+```
+rm .git # remove existing Git folder
+git init . # initialize new repository
+git add . 
+git commit -m "initial commit"
+```
+
+Create a new repository on GitHub.
+
+```
+git remote add origin git@github.com:YOUR_GITHUB_USER_NAME/{repository name}.git
+git push
+```
+
 Alternatively, this template should work with Overleaf, but that hasn't been tested.
 
 
